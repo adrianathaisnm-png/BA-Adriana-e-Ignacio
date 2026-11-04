@@ -34,4 +34,9 @@
 2. **`calcular_ocupacion`:** la llamada de prueba estaba dentro de la función, después del `return`, y no se ejecutaba. La movimos fuera y comprobamos que devuelve 75.0.
 
 ## Versiones
-El notebook se guardó con el nombre `Practica_centros_alumnado_v02.ipynb` en lugar de `practica_centros.ipynb`; se ha mantenido esa ruta durante toda la práctica para conservar su historial.
+
+Lo más importante que cambiamos fue en T4: en la versión inicial la función de la API daba error porque usábamos `contenido['daily_units']` antes de crear `contenido`. Quitamos esa línea y ya funcionaba para las tres ciudades.
+
+También corregimos T1, porque el 80 salía como "media" en vez de "Alta", y R1, porque la prueba estaba dentro de la función y no se ejecutaba. Además ajustamos la lectura de archivos en T2 para usar `DATOS` y la hoja `centros`.
+
+
